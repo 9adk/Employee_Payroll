@@ -12,3 +12,9 @@ create table employee_payroll_service(
     -> PRIMARY KEY      (id)
     -> );
 describe employee_payroll_service;
+
+#Usecase3:
+insert into employee_payroll_service(name, salary, start) VALUES
+    -> ('BILL', 1000000.00, '2019-08-11'),
+    -> ('Aniket', 2000000.00, '2019-11-08'),
+    -> ('Sanket', 30000000.00, '2019-12-13');
