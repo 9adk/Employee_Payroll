@@ -34,3 +34,13 @@ update employee_payroll_service  set gender = 'M' where name = 'Aniket';
 update employee_payroll_service  set gender = 'M' where name = 'BILL' OR name = 'Sanket';
 select * from employee_payroll_service;
 describe employee_payroll_service;
+
+#Usecase7:
+insert into employee_payroll_service(name, gender, salary, start) VALUES
+    -> ('Deepika', 'F',2500000.00,'2018-12-11');
+select * from employee_payroll_service;
+select gender, AVG(salary) from employee_payroll_service group by gender;
+select gender, SUM(salary) from employee_payroll_service group by gender;
+select gender, COUNT(salary) from employee_payroll_service group by gender;
+select gender, MIN(salary) from employee_payroll_service group by gender;
+select gender, MAX(salary) from employee_payroll_service group by gender;
