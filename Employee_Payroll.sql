@@ -21,3 +21,8 @@ insert into employee_payroll_service(name, salary, start) VALUES
 
 #Usecase4:
 select * from employee_payroll_service;
+
+#Usecase5:
+select salary from employee_payroll_service where name = 'Aniket';
+select salary from employee_payroll_service where start between cast('2019-12-13' as date) and date(NOW());
+select * from employee_payroll_service where start between cast('2019-08-11' as date) and date(NOW());
