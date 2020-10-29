@@ -26,3 +26,11 @@ select * from employee_payroll_service;
 select salary from employee_payroll_service where name = 'Aniket';
 select salary from employee_payroll_service where start between cast('2019-12-13' as date) and date(NOW());
 select * from employee_payroll_service where start between cast('2019-08-11' as date) and date(NOW());
+
+#Usecase6:
+alter table employee_payroll_service add gender char(1) after name;
+select * from employee_payroll_service;
+update employee_payroll_service  set gender = 'M' where name = 'Aniket';
+update employee_payroll_service  set gender = 'M' where name = 'BILL' OR name = 'Sanket';
+select * from employee_payroll_service;
+describe employee_payroll_service;
