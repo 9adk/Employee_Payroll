@@ -44,3 +44,9 @@ select gender, SUM(salary) from employee_payroll_service group by gender;
 select gender, COUNT(salary) from employee_payroll_service group by gender;
 select gender, MIN(salary) from employee_payroll_service group by gender;
 select gender, MAX(salary) from employee_payroll_service group by gender;
+
+--Usecase8:
+alter table employee_payroll_service add phone numeric(10) after name;
+alter table employee_payroll_service add address varchar(250) after phone;
+alter table employee_payroll_service add department varchar(150) NOT NULL after address;
+alter table employee_payroll_service alter address SET DEFAULT 'TBD';
